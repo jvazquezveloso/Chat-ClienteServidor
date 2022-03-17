@@ -1,8 +1,3 @@
-import com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport;
-import com.sun.xml.internal.ws.policy.subject.WsdlBindingSubject;
-
-import javax.imageio.stream.ImageInputStream;
-import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
@@ -35,6 +30,7 @@ public class ClienteChat {
             while (socket.isConnected()){
                 String mensaje = sc.nextLine();
                 bufferedWriter.write(nombreUsuario+": "+mensaje);
+                bufferedWriter.newLine();
                 bufferedWriter.flush();
             }
         }catch (IOException e){

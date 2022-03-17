@@ -1,5 +1,3 @@
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -22,7 +20,6 @@ public class ServidorChat {
                 hilo.start();
             }
         }catch (IOException e ){
-
         }
     }
 
